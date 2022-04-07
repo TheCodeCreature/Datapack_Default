@@ -1,0 +1,1 @@
+execute as @s at @s run summon armor_stand ~-.5 ~-.5 ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["soul_stand","soul_stand_x"]}

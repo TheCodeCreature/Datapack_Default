@@ -1,43 +1,20 @@
 #########################################
-#                  Notes
-#########################################
-#
-#
-#########################################
-#                 Rules
-#########################################
-
-gamerule commandBlockOutput false
-gamerule doWeatherCycle false
-gamerule mobGriefing false
-gamerule keepInventory true
-
-#########################################
-#                 Debug
-#########################################
-
-scoreboard objectives remove fungus_click
-scoreboard objectives add fungus_click used:warped_fungus_on_a_stick
-scoreboard players add @a fungus_click 0
-
-scoreboard objectives remove carrot_click
-scoreboard objectives add carrot_click used:carrot_on_a_stick
-scoreboard players add @a carrot_click 0
-
-#########################################
 #              Stored Vars
 #########################################
 
-scoreboard objectives remove var
-scoreboard objectives add var dummy
+scoreboard objectives remove tp_player_cooldown
+scoreboard objectives add tp_player_cooldown dummy
 
-scoreboard players add rngNum1 var 0
-scoreboard players add rngNum2 var 0
-scoreboard players add rngNum3 var 0
+scoreboard objectives remove tp_player_bool
+scoreboard objectives add tp_player_bool dummy
 
 scoreboard objectives remove search_area_bool
 scoreboard objectives add search_area_bool dummy
 scoreboard objectives setdisplay sidebar search_area_bool
+
+scoreboard objectives remove animate_frame
+scoreboard objectives add animate_frame dummy
+scoreboard players add frame animate_frame 0
 
 #########################################
 #                Position
@@ -69,22 +46,22 @@ scoreboard players add @a player_y 0
 scoreboard players add @a player_z 0
 
 #########################################
-#               Load Values
-#########################################
-
-schedule function startup:load_delayed 10t
-
-#########################################
 #               Set Loops
 #########################################
 
-schedule function startup:main_loop 10t
-schedule function startup:delayed_loop_short 10t
-schedule function startup:delayed_loop_medium 10t
-schedule function startup:delayed_loop_long 10t
+schedule function startup:main_loop 1t
+schedule function startup:delayed_loop_short 2t
+schedule function startup:delayed_loop_long 3t
 
 #########################################
-#                 Credits
+#               Load Values
 #########################################
-schedule function title:loaded 40t
-schedule function title:signature 60t
+
+schedule function startup:load_delayed 3t
+
+#########################################
+#                Credit
+#########################################
+
+schedule function title:loaded 10t
+schedule function title:signature 50t

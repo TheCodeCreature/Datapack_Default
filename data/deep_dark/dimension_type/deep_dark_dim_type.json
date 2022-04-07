@@ -1,0 +1,18 @@
+{
+  "logical_height": 320,
+  "infiniburn": "minecraft:netherrack",
+  "effects": "minecraft:overworld",
+  "ambient_light": 0.1,
+  "respawn_anchor_works": true,
+  "has_raids": false,
+  "min_y": -64,
+  "height": 320,
+  "natural": true,
+  "coordinate_scale": 1,
+  "piglin_safe": false,
+  "bed_works": false,
+  "has_skylight": false,
+  "has_ceiling": true,
+  "ultrawarm": false,
+  "fixed_time": 18000
+}

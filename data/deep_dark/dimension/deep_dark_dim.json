@@ -1,0 +1,12 @@
+{
+  "type": "deep_dark:deep_dark_dim_type",
+  "generator": {
+    "biome_source": {
+      "biome": "deep_dark:deep_dark_biome",
+      "type": "minecraft:fixed"
+    },
+    "seed": 286956243,
+    "settings": "deep_dark:noise_setting",
+    "type": "minecraft:noise"
+  }
+}

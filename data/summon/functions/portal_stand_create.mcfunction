@@ -1,0 +1,1 @@
+summon armor_stand ~-.5 ~-.5 ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["portal_create"],Rotation:[90f,0f]}

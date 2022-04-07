@@ -1,0 +1,7 @@
+execute store result score @s tp_player_bool as @s at @s if score @s player_x >= @e[type=armor_stand,tag=portal_stand_x,limit=1,sort=nearest,distance=..20] dummy_x_min if score @s player_x <= @e[type=armor_stand,limit=1,sort=nearest] dummy_x_max if score @s player_y >= @e[type=armor_stand,limit=1,sort=nearest] dummy_y_min if score @s player_y <= @e[type=armor_stand,limit=1,sort=nearest] dummy_y_max if score @s player_z = @e[type=armor_stand,limit=1,sort=nearest] dummy_z_min
+execute if score @s tp_player_bool matches 0 run execute store result score @s tp_player_bool as @s at @s if score @s player_x = @e[type=armor_stand,tag=portal_stand_z,limit=1,sort=nearest,distance=..20] dummy_x_min if score @s player_y >= @e[type=armor_stand,limit=1,sort=nearest] dummy_y_min if score @s player_y <= @e[type=armor_stand,limit=1,sort=nearest] dummy_y_max if score @s player_z >= @e[type=armor_stand,limit=1,sort=nearest] dummy_z_min if score @s player_z <= @e[type=armor_stand,limit=1,sort=nearest] dummy_z_max
+
+execute if score @s tp_player_bool matches 0 run scoreboard players set @s tp_player_cooldown 60
+execute if score @s tp_player_bool matches 1 run scoreboard players remove @s tp_player_cooldown 1
+execute if score @s tp_player_bool matches 1 run effect give @s nausea 4 1 true
+execute if score @s tp_player_cooldown matches 59 run playsound block.portal.trigger master @s ~ ~ ~ .3 .7 1

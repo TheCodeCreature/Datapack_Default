@@ -1,1 +1,0 @@
-execute as @s at @s run summon armor_stand ^ ^ ^ {Tags:["stand_default"],NoGravity:0b,Invulnerable:0b,Invisible:0b}

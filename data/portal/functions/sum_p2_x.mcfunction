@@ -1,0 +1,1 @@
+summon area_effect_cloud ~-1 ~ ~ {Tags:["p2"], Particle:"dust 1 0 0.918 1",Radius:.1f,Duration:2}

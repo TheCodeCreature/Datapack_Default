@@ -1,3 +1,3 @@
-# execute as @e[type=warden,tag=!tagged] at @s run summon warden ~ ~ ~ {Brain:{memories:{"minecraft:is_emerging":{value:1b,ttl:80L},"minecraft:last_disturbance":{value:1253891,ttl:1200L}}},Marker:1b,Tags:["tagged"],Passengers:[{id:"minecraft:armor_stand",Tags:["death_check"],Invisible:1b,Invulnerable:1b}]}
-# execute as @e[type=warden,tag=!tagged] at @s run tp @s ~ -200 ~
-# execute as @e[type=warden,tag=!tagged] at @s run kill @s
+execute as @e[type=warden,tag=!tagged] at @s run summon warden ~ ~ ~ {Brain:{memories:{"minecraft:is_emerging":{value:1b,ttl:80L},"minecraft:last_disturbance":{value:1253891,ttl:1200L}}},Marker:1b,Tags:["tagged"],Passengers:[{id:"minecraft:armor_stand",Tags:["death_check"],Invisible:1b,Invulnerable:1b}]}
+execute as @e[type=warden,tag=!tagged] at @s run tp @s ~ -200 ~
+execute as @e[type=warden,tag=!tagged] at @s run kill @s
